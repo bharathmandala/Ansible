@@ -11,3 +11,17 @@
   - name: print the variables #vars
     debug:
       msg: "Hi, I am learning {{ concept }} from last {{ duration }} and will complete it in {{ end }}"
+
+- name: another example
+  hosts: local
+  connection: local
+
+  vars:
+    area: Marathahalli
+    city: Bangalore
+    state: Karnataka
+    pincode: 560000
+  tasks:
+  - name: printing the details
+    debug:
+     msg: "Hi, I have visited {{ area }} which is in {{ city }} city and it is in {{ state }} state, it's pincode is {{ pincode }}"
