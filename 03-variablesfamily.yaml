@@ -17,6 +17,3 @@
   - name: parent
     debug:
       msg: ramesh
-        children:
-          debug:
-            msg: abcd
