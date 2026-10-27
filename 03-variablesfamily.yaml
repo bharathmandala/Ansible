@@ -1,0 +1,22 @@
+- name: family
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: children
+    debug:
+      msg: a,b,c
+
+  - name: grandchild
+    debug: 
+      msg: xyz
+
+- name: family2
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: parent
+    debug:
+      msg: ramesh
+        children:
+          debug:
+            msg: abcd
