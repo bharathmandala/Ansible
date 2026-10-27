@@ -1,5 +1,5 @@
 - name: family
-  hosts: localhost
+  hosts: local
   connection: local
   tasks:
   - name: children
@@ -11,7 +11,7 @@
       msg: xyz
 
 - name: family2
-  hosts: localhost
+  hosts: local
   connection: local
   tasks:
   - name: parent
