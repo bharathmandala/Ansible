@@ -1,0 +1,7 @@
+- name: Demo for Ansible
+  hosts: local
+  connection: local
+  tasks:
+  - name: playing with yaml
+    ansible.builtin.debug:
+      msg: I am playing cricket after studying
