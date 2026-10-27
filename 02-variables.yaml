@@ -2,6 +2,9 @@
   hosts: localhost
   connection: local
   tasks:
-  - name: playing with yaml
+  - name: playing
     ansible.builtin.debug:
-      msg: I am playing cricket after studying
+      msg: I am playing cricket
+  - name: which class
+    debug:
+      msg: I am studying 8th class
