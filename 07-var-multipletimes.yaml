@@ -4,6 +4,7 @@
 
   vars:
     quantity: 10packets
+
   tasks:
   - name: print the info
     debug:
@@ -12,5 +13,5 @@
   - name: print the info with variable again
     vars:
      quantity: 2packets
-     debug:
+    debug:
       msg: "Hi, I have {{ quantity }} of biscuits"
