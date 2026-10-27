@@ -1,2 +1,13 @@
 - name: reffering variables and getting values
-  hosts: frontend
+  hosts: local
+  connection: local
+
+  vars:
+    concept: Ansible
+    duration: 5days
+    end: 2days
+
+  tasks:
+  - name: print the variables #vars
+    debug:
+      msg: "Hi, I am learning {{ concept }} from last {{ duration }} and will complete it in {{ end }}"
