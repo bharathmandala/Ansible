@@ -3,9 +3,7 @@
   connection: local
 
   vars:
-    concept: concept.yaml
-    duration: 5days
-    end: 2days
+  - concept.yaml
 
   tasks:
   - name: print the variables #vars
