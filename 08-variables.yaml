@@ -1,0 +1,13 @@
+- name: reffering variables and getting values
+  hosts: local
+  connection: local
+
+  vars:
+    concept: concept.yaml
+    duration: 5days
+    end: 2days
+
+  tasks:
+  - name: print the variables #vars
+    debug:
+      msg: "Hi, I am learning {{ concept }} from last {{ duration }} and will complete it in {{ end }}"
