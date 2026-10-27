@@ -1,5 +1,5 @@
 - name: Demo for Ansible
-  hosts: local
+  hosts: localhost
   connection: local
   tasks:
   - name: playing with yaml
