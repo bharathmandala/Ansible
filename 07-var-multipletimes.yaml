@@ -1,0 +1,16 @@
+- name: printing the variable from task level
+  hosts: local
+  connection: local
+
+  vars:
+    quantity: 10packets
+  tasks:
+  - name: print the info
+    debug:
+      msg: "Hi, I have {{ quantity }} of biscuits"
+
+  - name: print the info with variable again
+    vars:
+     quantity: 2packets
+     debug:
+      msg: "Hi, I have {{ quantity }} of biscuits"
