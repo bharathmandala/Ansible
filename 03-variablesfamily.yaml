@@ -17,3 +17,6 @@
   - name: parent
     debug:
       msg: ramesh
+  - name: child for ramesh
+    debug:
+      msg: suresh
