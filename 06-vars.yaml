@@ -1,0 +1,2 @@
+- name: reffering variables and getting values
+  hosts: frontend
