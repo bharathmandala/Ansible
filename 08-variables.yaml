@@ -1,4 +1,4 @@
-- name: reffering variables and getting values
+- name: reffering variables and getting values from yaml file
   hosts: local
   connection: local
 
