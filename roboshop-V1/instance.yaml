@@ -15,3 +15,4 @@
       instance_type: t3.micro
       loop: "{{ instances }}"
       region: us-east-1
+    loop: "{{ instances }}"
