@@ -1,0 +1,16 @@
+- name: create ec2 instance with r53 record
+  hosts: local
+  connection: local
+
+  vars:
+    instances: ["mongodb", "redis", "mysql"]
+    domain_name: devopsio.store
+    ami_id: ami-0055977a6e828a4f4
+
+- name: create ec2 instance
+  amazon.aws.ec2_instance:
+    name: "roboshop-{{ item }}"
+    image_id: "{{ ami_id }}"
+    instance_type: t3.micro
+    loop: "{{ instances }}"
+    region: us-east-1
